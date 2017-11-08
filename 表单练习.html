@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>表单练习</title>
+</head>
+<body>
+<form action="表格标签.html">
+    <fieldset>
+        <legend>注册信息</legend>
+   <p> <label for="123">账号：</label><input type="text" id="123"/></p>
+   <p><label for="234">密码：</label><input type="password" id="234"></p>
+    性别：  <input type="radio" name="sex" value="nan"/>男
+            <input type="radio" name="sex" value="nv"/>女
+            <input type="radio" name="sex" value="baomi" checked="checked"/>保密 <br/><br/>
+    爱好：  <input type="checkbox" name="like" value="dabaojian"/>大保健
+            <input type="checkbox" name="like" value="tuiyou"/>推油
+            <input type="checkbox" name="like" value="shuangfei"/>双飞 <br/><br/>
+        喜欢的车型： <select name="cars">
+            <option value="cars">奔驰</option>
+            <option value="cars" selected="selected">宝马</option>
+            <option value="cars" >现代</option>
+            <option value="cars">福特</option>
+        </select><br/><br/>
+       请确认你的血型： <input type="text" list="110">
+        <datalist value="血型" id="110">
+            <option >A</option>
+            <option >B</option>
+            <option>AB</option>
+            <option>O</option>
+        </datalist>
+        <p><label for="345">邮箱：</label><input type="email" id="345" name="email"/></p>
+        <p><label for="45">电话：</label><input type="email" id="45" name="tel"/></p>
+        <p>生日：<input type="date" name="birthday"/></p>
+        个人简介：<br/>  <textarea name="introdution" cols="30" rows="10"></textarea>
+        <p><input type="submit"value="提交"/>     <input type="reset" value="重置"/></p></fieldset>
+</form>
+
+</body>
+</html>
